@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap");
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+/*NavBar*/
+.navbar-custom .navbar-nav .nav-link{
+    font-size: 18px;
+}
+.navbar-custom .btn-group{
+    margin: 6px;
+    width: 15%;
+    height: 3%;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height
+
+}
+
+
+
+
+
+/*Footer*/
+footer{
+    padding: 7px 15px;
+    background-color: #0c0c17;
+}
+
+footer .logo{
+    flex:0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 900;
+}
+footer .logo .Icon{
+    color:#999999;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 10px;
+    transition: all .5s ease;
+    text-decoration: none;
+}
+footer .logo .Icon:hover {
+    color: rgb(19, 143, 245);
+}
+
+/* copyright */
+.copyright {
+    background-color: #0c0c17;
+    border-top: 1px solid #1d1d27;
+    padding: 5px;
+
+}
+.copyright p{
+    color: #838383;
+    margin: 0px 12px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+}
+
