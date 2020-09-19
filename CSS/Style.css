@@ -1,64 +1,286 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap");
 @import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-/*NavBar*/
-.navbar-custom .navbar-nav .nav-link{
-    font-size: 18px;
+/*
+====================
+Navbar
+====================
+*/
+body{
+    margin: 0px;
 }
-.navbar-custom .btn-group{
-    margin: 6px;
-    width: 15%;
-    height: 3%;
+.navbar-custom {
+    background-color: #E3F2FD;
+    background-image: url("../Images/9.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #F5BB83;
 }
-
-.carousel {
-  position: relative;
-  width: 100%;
-  height
-
-}
-
-
-
-
-
-/*Footer*/
-footer{
-    padding: 7px 15px;
-    background-color: #0c0c17;
-}
-
-footer .logo{
-    flex:0 0 100%;
-    max-width: 100%;
-    text-align: center;
-    font-size: 30px;
-    color: #ffffff;
-    font-weight: 900;
-}
-footer .logo .Icon{
-    color:#999999;
-    text-decoration: none;
-    display: inline-block;
-    margin: 0px 10px;
-    transition: all .5s ease;
-    text-decoration: none;
-}
-footer .logo .Icon:hover {
-    color: rgb(19, 143, 245);
-}
-
-/* copyright */
-.copyright {
-    background-color: #0c0c17;
-    border-top: 1px solid #1d1d27;
-    padding: 5px;
-
-}
-.copyright p{
-    color: #838383;
-    margin: 0px 12px;
-    text-align: center;
+.navbar-brand .name{
+    padding-right: 10px;
+    color: #000;
+    font-size: 20px;
+    font-family: 'Poppins';
     font-weight: 400;
-    font-size: 15px;
+    background: red;
+    top:10px;
+}
+.navbar-brand img{
+    padding-right: 10px;
+    width: 145px;
+    height: 48px;
 }
 
+.nav-link {
+    color: #70778A;
+    font-size: 19px;
+    font-weight: 430;
+
+}
+/*Login/Register Button*/
+
+.btn {
+    width: 86px;
+    height: 37px;
+    font-size: 18px;
+    box-sizing: border-box;
+    outline: none;
+}
+.btn:focus {
+    -webkit-box-shadow: 0px 0px 4px #4195fc;
+       -moz-box-shadow: 0px 0px 4px #4195fc;
+            box-shadow: 0px 0px 4px #4195fc;
+}
+.nav-item a:hover {
+    color: rgb(54, 52, 52);
+    font-weight: 470;
+}
+/*~~~~~~~~~~~~~~~~This isn't working ~~~~~~~~~~~~~*/
+.active {
+    color: #ffffff;
+}
+/*Search Box*/
+.SearchBox input[type=text] {
+  padding: 5px;
+  font-size: 17px;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #ffffff;
+  border-radius: 3px 0px 0px 3px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+.SearchBox input[type=text]:focus {
+  border: 1px solid #555;
+  -webkit-box-shadow: 0px 0px 4px #4195fc;
+       -moz-box-shadow: 0px 0px 4px #4195fc;
+            box-shadow: 0px 0px 4px #4195fc;    
+}
+.SearchBox button {
+  float: left;
+  width: 16%;
+  padding: 5px;
+  background: #3F75F0;
+  color: white;
+  font-size: 17px;
+  box-sizing: border-box;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 0px 3px 3px 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+.SearchBox button:hover {
+  background: rgba(18, 18, 15, 0.884);
+}
+.SearchBox button:focus {
+    border: 1px solid #555;
+    -webkit-box-shadow: 0px 0px 4px #4195fc;
+       -moz-box-shadow: 0px 0px 4px #4195fc;
+            box-shadow: 0px 0px 4px #4195fc;
+}
+.SearchBox::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+/*
+====================
+Home
+====================
+*/
+.home-content{
+    padding-bottom: 50px;
+}
+.cards {
+    margin-top: 10px;
+}
+.carousel .carousel-inner {
+    height:400px
+}
+.carousel-inner .carousel-item img {
+    min-height:200px;
+    /*prevent it from stretch in screen size < than 768px*/
+    object-fit:cover
+}
+
+
+/*
+====================
+MSP Table
+====================
+*/
+.msp-content{
+    padding: 70px 60px 60px 60px;
+    background-image: url("../Images/bg7.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.msp-content h2{
+    font-size: 34px;
+    color: rgb(0, 26, 0);  
+}
+.msp-content h3{
+    font-family: Goudy Bookletter 1911, sans-serif;
+    font-size: 23px;
+    color:  rgb(4, 58, 4);
+    font-style: italic;
+}
+.msp-content p{
+    padding: 0px 2px 5px 8px ; 
+    color: rgb(23, 41, 23);
+    font-style: italic;   
+}
+
+.table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
+    border: 1px solid rgb(144, 204, 144); 
+}
+.tab{
+    background:rgb(216, 252, 216);
+    border-color: red;
+}
+.c {
+    text-align: center !important;
+}
+
+
+
+/*
+====================
+Schemes
+====================
+*/
+.scheme-content{
+    padding: 80px 0px 0px 80px;
+
+}
+
+
+/*mobile view*/
+@media(max-width:763px) {
+    .Logo .TeamName{
+     font-size: 24px;
+    }
+    .navbar-brand {
+        font-size: 17px;
+    }
+    .btn {
+    width: 86px;
+    }
+    .carousel .carousel-inner {
+        /*prevent it from adding a white space between carousel and container elements*/
+        height:auto
+    }
+    .Logo .TeamName{
+        font-size: 24px;
+    }
+    .msp-content{
+        padding: 25px 20px 60px 20px;
+    }
+    .msp-content h2{
+        font-size: 28.5px;
+    }
+    .msp-content h3{
+        font-size: 20.5px;
+    }
+    .t-c {
+        text-align: center !important;
+    }    
+}
+@media(max-width:991.4px) {
+    .SearchBox{
+        margin-bottom: 10px;
+    }
+    .SearchBox button {
+        width: 11%;
+        padding: 4.5px;
+    }
+    .SearchBox input[type=text] {
+        width: 50%;
+        padding: 4.5px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .msp-content {
+        padding: 70px 130px 60px 130px;
+    }
+    .msp-content p{
+        text-align: center;
+        font-size: 18px;
+        padding-bottom: 22px;
+    }
+    .msp-content h2{
+        padding-bottom: 15px;
+        font-size: 38px;
+    }
+}
+
+
+
+/*
+====================
+Footer
+====================
+*/
+footer {
+    border-top: 1px solid #000;
+    background-color: #E3F2FD;
+    background-image: url("../Images/10.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-top: 1px solid #000;
+    border-top: 1px solid #F5BB83;
+    text-align: center;
+    position: relative;
+    height: -100px;
+    padding: 10px;
+    line-height: 11px;
+}
+.Logo .TeamName{
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 800;
+    margin: 0px 0px 0px 0px;
+    position: relative;
+    top:6px;
+}
+.Logo img{
+    position: relative;
+    top:-1px;
+    width: 32px;
+    height: 30px;
+}
+.copyright {
+    color: rgb(214, 212, 212);
+    padding: 3px;
+    top:3px;
+}
