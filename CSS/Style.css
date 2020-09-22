@@ -15,15 +15,7 @@ body{
     border-bottom: 1px solid #000;
     border-bottom: 1px solid #F5BB83;
 }
-.navbar-brand .name{
-    padding-right: 10px;
-    color: #000;
-    font-size: 20px;
-    font-family: 'Poppins';
-    font-weight: 400;
-    background: red;
-    top:10px;
-}
+
 .navbar-brand img{
     padding-right: 10px;
     width: 145px;
@@ -58,6 +50,8 @@ body{
 .active {
     color: #ffffff;
 }
+/*~~~~~~~~~~~~~~~~
+
 /*Search Box*/
 .SearchBox input[type=text] {
   padding: 5px;
@@ -119,9 +113,32 @@ Home
 .home-content{
     padding-bottom: 50px;
 }
-.cards {
-    margin-top: 10px;
+
+.card{
+    
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
 }
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 400;
+}
+.card a:hover{
+    text-decoration: none;
+    color: #000000;
+}
+.card img{
+    height: 150px;
+}
+
+
+
 .carousel .carousel-inner {
     height:400px
 }
@@ -157,7 +174,8 @@ MSP Table
 .msp-content p{
     padding: 0px 2px 5px 8px ; 
     color: rgb(23, 41, 23);
-    font-style: italic;   
+    font-style: italic;
+    
 }
 
 .table-bordered > tbody > tr > td, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > td, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > thead > tr > th {
@@ -178,10 +196,59 @@ MSP Table
 Schemes
 ====================
 */
-.scheme-content{
-    padding: 80px 0px 0px 80px;
+.schemes-content{
+    padding: 50px 50px 50px 80px;
+    background-image: url("../Images/bg4.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.schemes-content .card{
+    width:75%;
+}
+.schemes-content .card-body h5{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(2, 48, 2);
+    margin: 0 0 10px;
+    padding: 0;
 
 }
+.schemes-content .card-body p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #838383;
+    margin: 0 0 10px;
+}
+
+.schemes-content .card-body a{
+    font-size: 14px;
+    color: rgb(10, 206, 10);
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    border-bottom: 2px solid rgb(10, 206, 10);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.schemes-content .card-body a:hover{
+    color:  rgb(3, 109, 3);
+    border-color:  rgb(3, 109, 3);
+}
+
+/*
+====================
+Scheme Page
+====================
+*/
+.scheme-content{
+    padding: 10px 10px 10px 15px;
+    font-size: 16px;
+}
+
+
 
 
 /*mobile view*/
@@ -213,8 +280,17 @@ Schemes
     }
     .t-c {
         text-align: center !important;
-    }    
+    }
+    .schemes-content{
+        padding: 0px 0px 0px 20px;
+    }  
+    .schemes-content .card{
+        width:90%;
+    }
+   
+   
 }
+
 @media(max-width:991.4px) {
     .SearchBox{
         margin-bottom: 10px;
@@ -242,7 +318,19 @@ Schemes
         padding-bottom: 15px;
         font-size: 38px;
     }
+    .card {
+        width: 400px;
+        margin: 20px 0px 0px 30px;   
+    }
+    .card img{
+        height: 150px;
+    }
 }
+
+
+
+
+
 
 
 
@@ -262,19 +350,22 @@ footer {
     text-align: center;
     position: relative;
     height: -100px;
+
     padding: 10px;
     line-height: 11px;
+   
 }
 .Logo .TeamName{
     font-size: 28px;
     color: #ffffff;
-    font-weight: 800;
     font-family: 'Poppins', sans-serif;
+    font-weight: 800;
     margin: 0px 0px 0px 0px;
     position: relative;
     top:6px;
+   
 }
-.Logo img{
+.Logo img{ 
     position: relative;
     top:-1px;
     width: 32px;
@@ -284,4 +375,5 @@ footer {
     color: rgb(214, 212, 212);
     padding: 3px;
     top:3px;
+
 }
