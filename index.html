@@ -54,9 +54,17 @@
                         <a class="nav-link pt-3" href="HTML/EMarketing.html">E-marketing</a>
                     </li>
                 </ul>
-                <form class="SearchBox" action="#" style="max-width:300px;">
-                    <input type="text" placeholder=" Search Schemes.." name="searchBar" id="searchBar">
-                        <button type="submit"><i class="fa fa-search"></i></button>
+                <form action="#" style="max-width:300px;">
+                    <!-- <div class="searchoption"></div> -->
+                    <div class="dropdown dropright">
+                        <input style="display: block;" type="text" placeholder=" Search Schemes.." name="searchBar"  id="dropdownMenuLink" class="searchbox" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <div class="dropdown-menu searchmenu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="#">Write</a>
+                          <a class="dropdown-item" href="#">all</a>
+                          <a class="dropdown-item" href="#">Schemenames</a>
+                          <a class="dropdown-item" href="#">one by one</a>
+                        </div>
+                      </div>
                 </form>
                 <button type="button" class="btn btn-outline-primary mx-1">Log In</button>
                 <button type="button" class="btn btn-outline-secondary mx-1">Register</button>
@@ -157,6 +165,7 @@
 
 
         <!-- Optional JavaScript -->
+        <script src="./Javascript/home.js"></script>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
